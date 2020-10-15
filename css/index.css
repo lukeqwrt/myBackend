@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 30px;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 3px 3px #00000090;
+}
+
+header h1 {
+    font-family: serif;
+    letter-spacing: .1em;
+    padding: 5px;
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header h1 span {
+    transition: 1s;
+}
+
+header h1 span:first-child {
+    color: goldenrod;
+    background-color: #000;
+}
+
+header h1 span:last-child {
+    color: #000;
+    background-color: goldenrod;
+    padding-left: .2em;
+    margin-left: .2em;
+}
+
+
+header h1:hover span:last-child {
+    color: goldenrod;
+    background-color: #000;
+}
+
+header h1:hover span:first-child {
+    color: #000;
+    background-color: goldenrod;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: goldenrod;
+}
+
+main {
+    margin-top: 60px;
+}
+
+section {
+    min-height: calc(100vh - 60px);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px 0;
+}
+
+#home p {
+    font-size: 5vw;
+    padding: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+#home button {
+    background-color: goldenrod;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#home button:hover {
+    transform: scale(1.2);
+}
+
+#home .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#home:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#home .slide {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+
+#about {
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+#about .wrapper h1 {
+    display: flex;
+    align-items: center;
+}
+
+#about .wrapper h1 .icon {
+    margin-left: 20px;
+}
+
+#about .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10px;
+}
+
+#about h1 {
+    margin-bottom: 0px;
+}
+
+#about p {
+    line-height: 24px;
+    font-family: 'Questrial', sans-serif;
+}
+
+#about .wrapper p {
+    font-size: 16px;
+    max-width: 80%;
+    margin-bottom: 0px;
+
+}
+
+#about .wrapper .thumbnail {
+    width: 100%;
+}
+
+#about .wrapper section {
+    flex: 1 1 300px;
+}
+
+#menu {
+   background-color: #000;
+   background-image: url('../img/pexels-photo-260922.jpeg');
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   position: relative;
+   padding-bottom: 50px;
+}
+
+#menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+
+#menu h1 {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+#menu .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#menu .wrapper .card{
+    width: 30%;
+    min-width: 200px;
+    height:150px;
+    background-color: #fff;
+    z-index: 2;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0  3px 6px #333;
+}
+
+
+
+
+.HELLO{
+    z-index: 3;
+    margin-right: 800px;
+}
+
+.HELLO #sanaol {
+    
+}
+
+.HELLO .Toto {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    z-index: 3;
+}
+
+.HELLO .Toto span {
+    z-index: 3;
+    background-color: goldenrod;
+    color: #000;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.HELLO h2, 
+.HELLO p {
+
+    width: 350px;
+        background-color: black;
+    padding: 10px 10px;
+    color: white;
+
+}
+
+
+.HELLO {
+    transition: 0.3s;
+}
+
+.HELLO:hover {
+    transform: scale(1.1);
+}
+
+.hii a {
+    z-index: 5;
+}
+
+.card .thumbnail {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.card .thumbnail span {
+    background-color: goldenrod;
+    color: #000;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.card h2, 
+.card p {
+    background-color: white
+    padding: 0 10px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:goldenrod;
+    color: #000;
+    font-weight: 600;
+}
+
+footer p {
+    flex: 1 1 auto;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    filter: grayscale(10); 
+    transition: 0.3s;
+}
+
+
+
+
+
+.container a{
+    color: black;
+    display: center;
+}
+/*
+footer nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+footer nav ul a {
+    padding: 12px;
+    color: red;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul a {
+    color: red;
+}*/
+header nav ul a:hover {
+    color: white;
+    filter: grayscale(0)
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: rgba(0,0,0, .9);
+    display: none;
+}
+
+.modal.show {
+    display: flex;
+    z-index: 9999;
+}
+
+.modal span {
+    color: goldenrod;
+    font-weight: 600;
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.modal span:hover {
+    transform: rotateZ(180deg);
+}
+
+.reservation {
+    align-self: center;
+    background-color: goldenrod;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.reservation h2 {
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.reservation label, input {
+    display: block;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.reservation form {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.reservation form .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reservation form .wrapper label {
+    flex: 1 1 100px;
+}
+
+.reservation form .wrapper label:not(:last-child) {
+    margin-right: 10px;
+}
+
+form footer {
+    background-color: #000;
+}
+
+input[type=submit] {
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    color: goldenrod;
+    background-color: #000;
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(17, 167, 104);
+}
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('../img/pexels-photo-260922.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.success .wrapper {
+    border: 3px solid #000;
+    color: #000;
+    border-radius: 10px;
+    background-color: goldenrod;
+    width: 300px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.success .wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.success .highlight {
+    font-weight: 600;
+}
+
+.success .wrapper a {
+    text-decoration: none;  
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #000;
+    padding: 10px;
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
